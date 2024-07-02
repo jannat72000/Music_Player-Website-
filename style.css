@@ -1,0 +1,202 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+
+nav {
+    font-family: 'Roboto', sans-serif; 
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: #1DB954;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 40px; 
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem; 
+}
+
+/* Main container */
+.container {
+    min-height: 72vh;
+    background-color: #282c34; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 24px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('BG.jpeg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.songItemContainer {
+    margin-top: 20px; 
+    overflow-y: auto; 
+}
+
+.songItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+}
+
+.songItem:hover {
+    background-color: black;
+}
+
+.songItem img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    margin-right: 15px; 
+    object-fit: cover; 
+}
+
+.songItem .songDetails {
+    flex: 1; 
+}
+
+.songItem .songName {
+    font-size: 1.1rem; 
+    font-weight: bold;
+    margin-bottom: 4px; 
+}
+
+.songItem .artist {
+    font-size: 0.9rem; 
+    color: #ccc; 
+}
+
+.songItem .timestamp {
+    font-size: 0.8rem; 
+    color: #888; 
+}
+
+/* Bottom controls */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: #1DB954;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons {
+    margin-top: 14px; 
+}
+
+.icons i {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem; 
+    transition: transform 0.2s ease; 
+}
+
+.icons i:hover {
+    transform: scale(1.2); 
+}
+
+
+#myProgressBar {
+    width: 80%; 
+    height: 6px; 
+    cursor: pointer;
+    background-color: #333; 
+    border-radius: 3px; 
+}
+
+/* Song info */
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/* Volume control */
+.volume-control {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.volume-control i {
+    margin-right: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem; 
+    transition: transform 0.2s ease; 
+}
+
+.volume-control i:hover {
+    transform: scale(1.2); 
+}
+
+#volumeSlider {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: #1DB954;
+    }
+
+    .container {
+        width: 90%; 
+        padding: 16px; 
+    }
+
+    .bottom {
+        height: 100px; 
+    }
+}
