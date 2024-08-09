@@ -2,15 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+/* Resetting default styles */
 body {
     background-color: #f7f7f7;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Navigation styling */
 nav {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -35,7 +37,7 @@ nav ul li a {
 }
 
 .brand img {
-    width: 40px; 
+    width: 40px;
     padding: 0 8px;
 }
 
@@ -43,13 +45,13 @@ nav ul li a {
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 /* Main container */
 .container {
     min-height: 72vh;
-    background-color: #282c34; 
+    background-color: #282c34;
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -57,26 +59,27 @@ nav ul li a {
     margin: 23px auto;
     width: 70%;
     border-radius: 12px;
-    padding: 24px; 
+    padding: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-image: url('BG.jpeg');
-    background-size: cover; 
-    background-position: center; 
+    background-image: url('BG.jpg'); /* Fixed the file extension */
+    background-size: cover;
+    background-position: center;
 }
 
-
+/* Song Item Container */
 .songItemContainer {
-    margin-top: 20px; 
-    overflow-y: auto; 
+    margin-top: 20px;
+    overflow-y: auto;
 }
 
+/* Song Item Styling */
 .songItem {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 12px;
     border-radius: 8px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
@@ -85,34 +88,34 @@ nav ul li a {
 }
 
 .songItem img {
-    width: 60px; 
-    height: 60px; 
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 15px; 
-    object-fit: cover; 
+    margin-right: 15px;
+    object-fit: cover;
 }
 
 .songItem .songDetails {
-    flex: 1; 
+    flex: 1;
 }
 
 .songItem .songName {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
 }
 
 .songItem .artist {
-    font-size: 0.9rem; 
-    color: #ccc; 
+    font-size: 0.9rem;
+    color: #ccc;
 }
 
 .songItem .timestamp {
-    font-size: 0.8rem; 
-    color: #888; 
+    font-size: 0.8rem;
+    color: #888;
 }
 
-/* Bottom controls */
+/* Bottom Controls */
 .bottom {
     position: sticky;
     bottom: 0;
@@ -122,34 +125,34 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .icons {
-    margin-top: 14px; 
+    margin-top: 14px;
 }
 
 .icons i {
     cursor: pointer;
     color: white;
-    font-size: 1.5rem; 
-    transition: transform 0.2s ease; 
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
 }
 
 .icons i:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
-
+/* Progress Bar */
 #myProgressBar {
-    width: 80%; 
-    height: 6px; 
+    width: 80%;
+    height: 6px;
     cursor: pointer;
-    background-color: #333; 
-    border-radius: 3px; 
+    background-color: #333;
+    border-radius: 3px;
 }
 
-/* Song info */
+/* Song Info */
 .songInfo {
     position: absolute;
     left: 10vw;
@@ -161,7 +164,7 @@ nav ul li a {
     transition: opacity 0.4s ease-in;
 }
 
-/* Volume control */
+/* Volume Control */
 .volume-control {
     display: flex;
     align-items: center;
@@ -172,12 +175,12 @@ nav ul li a {
     margin-right: 8px;
     cursor: pointer;
     color: white;
-    font-size: 1.2rem; 
-    transition: transform 0.2s ease; 
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
 }
 
 .volume-control i:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 #volumeSlider {
@@ -185,18 +188,18 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media only screen and (max-width: 1100px) {
     body {
         background-color: #1DB954;
     }
 
     .container {
-        width: 90%; 
-        padding: 16px; 
+        width: 90%;
+        padding: 16px;
     }
 
     .bottom {
-        height: 100px; 
+        height: 100px;
     }
 }
